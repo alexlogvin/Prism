@@ -208,3 +208,5 @@ FakesAssemblies/
 
 # Binlog
 *.binlog
+
+.DS_Store

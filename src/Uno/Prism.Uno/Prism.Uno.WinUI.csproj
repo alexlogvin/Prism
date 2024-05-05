@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Uno.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>$(UnoTargetFrameworks)</TargetFrameworks>
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <AssemblyName>Prism.Uno</AssemblyName>
     <RootNamespace>Prism</RootNamespace>
@@ -16,10 +15,11 @@
     <PackageTags>prism;winui;windows;uno;mvvm;uwp;ios;android;macos;webassembly;linux;xaml</PackageTags>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Uno.WinUI" />
-    <PackageReference Include="Uno.Extensions.Hosting.WinUI" />
-  </ItemGroup>
+  <PropertyGroup>
+    <UnoExtensionsVersion>4.1.14</UnoExtensionsVersion>
+    <UnoToolkitVersion>6.0.18</UnoToolkitVersion>
+    <UnoFeatures>Hosting</UnoFeatures>
+  </PropertyGroup>
 
   <ItemGroup Condition="!$(TargetFramework.Contains('windows10'))">
     <PackageReference Include="Uno.Microsoft.Xaml.Behaviors.WinUI.Managed" />
