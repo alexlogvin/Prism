@@ -11,8 +11,8 @@
   </ItemGroup>
   <!-- Maui -->
   <ItemGroup Condition=" $(UseMaui) == 'true' ">
-    <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-    <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+    <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.61" />
+    <PackageVersion Include="Microsoft.Maui.Controls" Version="8.0.61" />
   </ItemGroup>
   <!-- Uno
     Note that the $(UnoVersion) comes from the Uno.Sdk. You should not update it manually. To update the version of Uno,
